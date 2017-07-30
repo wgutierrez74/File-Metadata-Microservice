@@ -1,5 +1,5 @@
 var multer = require('multer');
-
+var upload = multer({ dest: 'uploads/' })
 
 module.exports = function(app){
   
@@ -8,7 +8,7 @@ module.exports = function(app){
   });
   
 
-  app.route('/upload').post( , function(req, res){
+  app.route('/upload').post(upload("file") , function(req, res){
       
       res.send({"size": req.file.size});
     
