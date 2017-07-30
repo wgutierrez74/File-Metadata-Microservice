@@ -3,7 +3,7 @@ var multer  = require('multer');
 var url = require('url');
  
 var settings = {
-    "host": 'mongodb://will:password@ds125623.mlab.com:25623/',
+    "host": 'mongodb://will:password@ds125623.mlab.com:25623/fcc-backend',
     "port": 25623,
     "database": 'fcc-backend'
 };
